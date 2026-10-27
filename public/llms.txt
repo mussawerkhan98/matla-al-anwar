@@ -1,12 +1,12 @@
 # Matla Al Anwar — Painting & Sofa Cleaning (UAE)
 
-> Matla Al Anwar (matlaalanwar.ae) provides professional house painting and sofa cleaning services across all seven emirates of the UAE: interior and exterior painting, apartment and villa repainting, move-in/move-out painting, and deep sofa, upholstery, majlis, carpet and mattress cleaning.
+> Matla Al Anwar (matlaalanwar.com) provides professional house painting and sofa cleaning services across all seven emirates of the UAE: interior and exterior painting, apartment and villa repainting, move-in/move-out painting, and deep sofa, upholstery, majlis, carpet and mattress cleaning.
 
 ## Contact
-- Website: https://matlaalanwar.ae
+- Website: https://www.matlaalanwar.com
 - Phone: +971 50 000 0000
 - WhatsApp: https://wa.me/971500000000
-- Email: info@matlaalanwar.ae
+- Email: info@matlaalanwar.com
 - Areas: Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain
 
 ## Starting prices (AED)
@@ -19,15 +19,15 @@
 - Mattress cleaning: from 99
 
 ## Pages
-- [Home](https://matlaalanwar.ae/): Painting and sofa cleaning overview
-- [Services](https://matlaalanwar.ae/services): Interior, exterior and apartment painting; sofa, upholstery, majlis and mattress cleaning
-- [Pricing](https://matlaalanwar.ae/pricing): Starting prices for painting and cleaning packages
-- [Who We Serve](https://matlaalanwar.ae/industries): Apartments, villas, landlords, offices, restaurants, hotels and holiday homes
-- [Areas](https://matlaalanwar.ae/locations): Emirate-by-emirate coverage
-- [About](https://matlaalanwar.ae/about): Company background and values
-- [Blog](https://matlaalanwar.ae/blog): Painting and sofa care guides
-- [FAQ](https://matlaalanwar.ae/faq): Frequently asked questions
-- [Contact](https://matlaalanwar.ae/contact): Free quote request
+- [Home](https://www.matlaalanwar.com/): Painting and sofa cleaning overview
+- [Services](https://www.matlaalanwar.com/services): Interior, exterior and apartment painting; sofa, upholstery, majlis and mattress cleaning
+- [Pricing](https://www.matlaalanwar.com/pricing): Starting prices for painting and cleaning packages
+- [Who We Serve](https://www.matlaalanwar.com/industries): Apartments, villas, landlords, offices, restaurants, hotels and holiday homes
+- [Areas](https://www.matlaalanwar.com/locations): Emirate-by-emirate coverage
+- [About](https://www.matlaalanwar.com/about): Company background and values
+- [Blog](https://www.matlaalanwar.com/blog): Painting and sofa care guides
+- [FAQ](https://www.matlaalanwar.com/faq): Frequently asked questions
+- [Contact](https://www.matlaalanwar.com/contact): Free quote request
 
 ## Optional
-- [Sitemap](https://matlaalanwar.ae/sitemap.xml): Full list of indexed URLs
+- [Sitemap](https://www.matlaalanwar.com/sitemap.xml): Full list of indexed URLs
