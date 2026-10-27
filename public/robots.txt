@@ -4,4 +4,4 @@ Disallow: /admin
 Disallow: /auth
 Disallow: /debug-auth
 
-Sitemap: https://matlaalanwar.ae/sitemap.xml
+Sitemap: https://www.matlaalanwar.com/sitemap.xml
