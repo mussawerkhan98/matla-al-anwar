@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, Paintbrush, Facebook, Instagram, Linkedin } from "lucide-react";
-import { SITE, NAV_LINKS, SERVICES } from "@/lib/site";
+import { SITE, NAV_LINKS, SERVICES, whatsappLink } from "@/lib/site";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { settingsQuery, getSetting } from "@/lib/settings.query";
 import { locationsQuery } from "@/lib/locations.query";
@@ -21,7 +21,7 @@ export function SiteFooter() {
   const phone = getSetting(settings, "site_phone", SITE.phone);
   const phoneHref = `tel:${phone.replace(/[^\d+]/g, "")}`;
   const whatsapp = getSetting(settings, "site_whatsapp", SITE.whatsapp);
-  const whatsappHref = `https://wa.me/${whatsapp}?text=Hello%20Matla%20Al%20Anwar%2C%20I%20need%20a%20quote.`;
+  const whatsappHref = whatsappLink(whatsapp);
   const email = getSetting(settings, "site_email", SITE.email);
   const address = getSetting(settings, "site_address", SITE.address);
   const tagline = getSetting(settings, "site_tagline", SITE.tagline);
