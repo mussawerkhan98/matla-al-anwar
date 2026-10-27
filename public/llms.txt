@@ -1,28 +1,33 @@
-# Matla Al Anwar Chiller Van Transport
+# Matla Al Anwar — Painting & Sofa Cleaning (UAE)
 
-> Premium refrigerated van and chiller truck transport across the UAE. Temperature-controlled cold-chain logistics for food, pharma, seafood, flowers and more. 24/7 cold-chain support based in Dubai, United Arab Emirates.
+> Matla Al Anwar (matlaalanwar.ae) provides professional house painting and sofa cleaning services across all seven emirates of the UAE: interior and exterior painting, apartment and villa repainting, move-in/move-out painting, and deep sofa, upholstery, majlis, carpet and mattress cleaning.
 
-Matla Al Anwar Chiller Van Transport (matlaalanwar.ae) provides refrigerated transport and chiller van rental services throughout the UAE, serving industries with strict cold-chain requirements.
-
-## Company
-
+## Contact
 - Website: https://matlaalanwar.ae
 - Phone: +971 50 000 0000
 - WhatsApp: https://wa.me/971500000000
-- Coverage: All 7 emirates of the UAE
+- Email: info@matlaalanwar.ae
+- Areas: Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain
+
+## Starting prices (AED)
+- Studio apartment painting: from 650
+- 1 bedroom apartment painting: from 950
+- 2 bedroom apartment painting: from 1,400
+- Villa painting: from 3,500
+- 3-seater sofa deep clean: from 149
+- L-shape / 5–7 seater sofa: from 249
+- Mattress cleaning: from 99
 
 ## Pages
-
-- [Home](https://matlaalanwar.ae/): Overview of chiller van rental and refrigerated transport services
+- [Home](https://matlaalanwar.ae/): Painting and sofa cleaning overview
+- [Services](https://matlaalanwar.ae/services): Interior, exterior and apartment painting; sofa, upholstery, majlis and mattress cleaning
+- [Pricing](https://matlaalanwar.ae/pricing): Starting prices for painting and cleaning packages
+- [Who We Serve](https://matlaalanwar.ae/industries): Apartments, villas, landlords, offices, restaurants, hotels and holiday homes
+- [Areas](https://matlaalanwar.ae/locations): Emirate-by-emirate coverage
 - [About](https://matlaalanwar.ae/about): Company background and values
-- [Fleet](https://matlaalanwar.ae/fleet): Available chiller vans and refrigerated trucks with pricing
-- [Services](https://matlaalanwar.ae/services): Refrigerated transport service offerings
-- [Industries](https://matlaalanwar.ae/industries): Industries served (food, pharma, seafood, flowers, etc.)
-- [Locations](https://matlaalanwar.ae/locations): Emirate-by-emirate service coverage
-- [Blog](https://matlaalanwar.ae/blog): Articles on cold-chain logistics
+- [Blog](https://matlaalanwar.ae/blog): Painting and sofa care guides
 - [FAQ](https://matlaalanwar.ae/faq): Frequently asked questions
-- [Contact](https://matlaalanwar.ae/contact): Contact details and quote requests
+- [Contact](https://matlaalanwar.ae/contact): Free quote request
 
 ## Optional
-
 - [Sitemap](https://matlaalanwar.ae/sitemap.xml): Full list of indexed URLs
