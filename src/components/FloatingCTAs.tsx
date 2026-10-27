@@ -1,12 +1,18 @@
 import { Phone } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { useQuery } from "@tanstack/react-query";
+import { SITE, whatsappLink } from "@/lib/site";
+import { settingsQuery, getSetting } from "@/lib/settings.query";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 export function FloatingCTAs() {
+  // Use the numbers saved in Admin → Settings (falls back to the defaults in site.ts).
+  const { data: settings = {} } = useQuery(settingsQuery());
+  const phone = getSetting(settings, "site_phone", SITE.phone);
+  const whatsapp = getSetting(settings, "site_whatsapp", SITE.whatsapp);
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
       <a
-        href={SITE.whatsappHref}
+        href={whatsappLink(whatsapp)}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -15,8 +21,8 @@ export function FloatingCTAs() {
         <WhatsAppIcon className="h-7 w-7" />
       </a>
       <a
-        href={SITE.phoneHref}
-        aria-label={`Call ${SITE.phone}`}
+        href={`tel:${phone.replace(/[^\d+]/g, "")}`}
+        aria-label={`Call ${phone}`}
         className="inline-flex items-center justify-center h-14 w-14 rounded-full gradient-brand text-white shadow-elegant hover:scale-110 transition-transform"
       >
         <Phone className="h-5 w-5" />
