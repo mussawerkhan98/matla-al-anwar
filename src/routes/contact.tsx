@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
 import { z } from "zod";
-import { SITE, canonicalUrl } from "@/lib/site";
+import { SITE, canonicalUrl, whatsappLink } from "@/lib/site";
 import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
 import { settingsQuery, getSetting } from "@/lib/settings.query";
 import { listFaqsPublic } from "@/lib/faqs.functions";
@@ -62,7 +62,7 @@ function ContactPage() {
   const phone = getSetting(settings, "site_phone", SITE.phone);
   const phoneHref = `tel:${phone.replace(/[^\d+]/g, "")}`;
   const whatsapp = getSetting(settings, "site_whatsapp", SITE.whatsapp);
-  const whatsappHref = `https://wa.me/${whatsapp}?text=Hello%20Matla%20Al%20Anwar%2C%20I%20need%20a%20quote.`;
+  const whatsappHref = whatsappLink(whatsapp);
   const email = getSetting(settings, "site_email", SITE.email);
   const address = getSetting(settings, "site_address", SITE.address);
 
@@ -97,7 +97,7 @@ function ContactPage() {
     ]
       .filter(Boolean)
       .join("\n");
-    const url = `https://wa.me/${whatsapp}?text=${encodeURIComponent(msg)}`;
+    const url = whatsappLink(whatsapp, msg);
     window.open(url, "_blank", "noopener");
     trackEvent("generate_lead", {
       form_name: "quote_form",
