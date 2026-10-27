@@ -1,18 +1,28 @@
-# Matla Al Anwar Chiller Van Transport
+# Matla Al Anwar — Painting & Sofa Cleaning
 
-Website + admin CMS (TanStack Start, React, Tailwind, Supabase), rebranded from the IQRAR Chiller Van template.
+Website + admin panel for **Matla Al Anwar** (painting and sofa cleaning, all 7 UAE emirates).
+Built with TanStack Start, React, Tailwind and Supabase.
+
+## Pages
+Home · About · Services (6 service pages) · Pricing · Who We Serve (8 pages) · Areas (7 emirate pages) · Blog (4 starter articles) · FAQ · Contact (WhatsApp quote form) · `/admin` CMS
+
+## Setup
+1. Create a new Supabase project.
+2. In Supabase → SQL Editor, run in order:
+   - `supabase/migrations/20261027110000_matla_schema.sql` (tables, security, storage)
+   - `supabase/migrations/20261027120000_matla_seed.sql` (all starter content)
+3. Copy `.env.example` to `.env` (and add the same variables in Vercel) with your Supabase URL and publishable key.
+4. `npm install && npm run dev`
+5. Open `/auth` and create an account — **the first account becomes the admin**.
 
 ## Placeholders to replace
 | What | Where |
 |---|---|
-| Domain `matlaalanwar.ae` | `src/lib/site.ts` (`SITE_URL`), `public/robots.txt`, `public/llms.txt`, `src/routes/__root.tsx`, `src/routes/services.$slug.tsx` |
-| Phone / WhatsApp `+971 50 000 0000` | `src/lib/site.ts`, `src/routes/services.$slug.tsx`, Supabase seed (`supabase/migrations/…140116…sql`) or Admin → Settings |
-| Email `info@matlaalanwar.ae` | `src/lib/site.ts`, Admin → Settings |
-| Logo / favicon / OG image | `public/logo.png`, `public/logo.svg`, `public/favicon.ico`, `public/og-image.jpg` |
-| Brand colours | `src/styles.css` (`--brand`, `--primary`, …) |
+| Phone / WhatsApp `+971 50 000 0000` | Admin → Settings (and `src/lib/site.ts` as fallback) |
+| Email `info@matlaalanwar.ae` | Admin → Settings / `src/lib/site.ts` |
+| Domain `matlaalanwar.ae` | `src/lib/site.ts` (`SITE_URL`), `public/robots.txt`, `public/llms.txt` |
+| Photos (illustrations for now) | Admin → Site Photos, plus a photo per service / price package |
+| Prices | Admin → Prices |
+| Customer reviews | Admin → Page Content → Home — Testimonials (section stays hidden until you add real reviews) |
 
-## Setup
-1. Create a new Supabase project for Matla Al Anwar and run the SQL files in `supabase/migrations/` in order.
-2. Copy `.env.example` to `.env` and fill in the Supabase URL / keys. Set `project_id` in `supabase/config.toml`.
-3. `npm install && npm run dev`
-4. Deploy (e.g. Vercel) with the same env vars.
+Brand colours come from the MA logo: `src/styles.css`.
