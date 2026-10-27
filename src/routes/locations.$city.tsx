@@ -1,6 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { MapPin, Clock, ArrowRight, Phone, CheckCircle2, PaintRoller, Sofa } from "lucide-react";
-import { SITE, SERVICES, PACKAGES, canonicalUrl } from "@/lib/site";
+import { SITE, SERVICES, PACKAGES, canonicalUrl, whatsappLink } from "@/lib/site";
+import { useQuery } from "@tanstack/react-query";
+import { settingsQuery, getSetting } from "@/lib/settings.query";
 import { getLocationBySlug, listLocationsPublic } from "@/lib/locations.functions";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
@@ -92,6 +94,10 @@ export const Route = createFileRoute("/locations/$city")({
 
 function CityPage() {
   const { city: c, allCities } = Route.useLoaderData();
+  const { data: settings = {} } = useQuery(settingsQuery());
+  const phone = getSetting(settings, "site_phone", SITE.phone);
+  const phoneHref = `tel:${phone.replace(/[^\d+]/g, "")}`;
+  const whatsappHref = whatsappLink(getSetting(settings, "site_whatsapp", SITE.whatsapp));
   const other = allCities.filter((x) => x.slug !== c.slug).slice(0, 4);
   const localFaqs = buildLocalFaqs(c.name);
   const neighborhoods = c.neighborhoods
@@ -124,11 +130,11 @@ function CityPage() {
             <p className="mt-5 text-lg text-muted-foreground max-w-2xl">{c.blurb}</p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={SITE.whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full gradient-brand text-white px-6 py-3.5 text-sm font-semibold shadow-elegant hover-lift">
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full gradient-brand text-white px-6 py-3.5 text-sm font-semibold shadow-elegant hover-lift">
                 <WhatsAppIcon className="h-4 w-4" /> Book on WhatsApp
               </a>
-              <a href={SITE.phoneHref} className="inline-flex items-center gap-2 rounded-full bg-white border border-border text-navy px-6 py-3.5 text-sm font-semibold hover:bg-accent">
-                <Phone className="h-4 w-4" /> {SITE.phone}
+              <a href={phoneHref} className="inline-flex items-center gap-2 rounded-full bg-white border border-border text-navy px-6 py-3.5 text-sm font-semibold hover:bg-accent">
+                <Phone className="h-4 w-4" /> {phone}
               </a>
             </div>
           </div>
