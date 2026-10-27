@@ -19,8 +19,8 @@ Home · About · Services (6 service pages) · Pricing · Who We Serve (8 pages)
 | What | Where |
 |---|---|
 | Phone / WhatsApp `+971 50 000 0000` | Admin → Settings (and `src/lib/site.ts` as fallback) |
-| Email `info@matlaalanwar.ae` | Admin → Settings / `src/lib/site.ts` |
-| Domain `matlaalanwar.ae` | `src/lib/site.ts` (`SITE_URL`), `public/robots.txt`, `public/llms.txt` |
+| Email `info@matlaalanwar.com` | Admin → Settings / `src/lib/site.ts` |
+| Domain `matlaalanwar.com` | `src/lib/site.ts` (`SITE_URL`), `public/robots.txt`, `public/llms.txt` |
 | Photos (illustrations for now) | Admin → Site Photos, plus a photo per service / price package |
 | Prices | Admin → Prices |
 | Customer reviews | Admin → Page Content → Home — Testimonials (section stays hidden until you add real reviews) |
