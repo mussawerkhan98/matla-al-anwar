@@ -1,4 +1,4 @@
-export const SITE_URL = "https://matlaalanwar.ae";
+export const SITE_URL = "https://www.matlaalanwar.com";
 
 /**
  * Build an absolute, self-referencing canonical URL for a given path.
@@ -19,7 +19,7 @@ export const SITE = {
   tagline: "Fresh walls. Spotless sofas.",
   description:
     "Professional house painting and sofa cleaning across the UAE. Interior & exterior painting, villa and apartment repainting, and deep sofa, upholstery and mattress cleaning — free inspection, same-day service.",
-  email: "info@matlaalanwar.ae",
+  email: "info@matlaalanwar.com",
   phone: "+971 50 000 0000",
   phoneHref: "tel:+971500000000",
   whatsapp: "971500000000",
