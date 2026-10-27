@@ -1,0 +1,328 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Matla Al Anwar Chiller Van Transport — Design System
+ * Premium corporate cold-chain logistics.
+ * Brand: #0057D9 primary, #00B8F5 secondary, #EAF8FF accent, #0B1F35 deep navy.
+ */
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-ice: var(--ice);
+  --color-navy: var(--navy);
+  --color-success: var(--success);
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Brand */
+  --brand: #0057D9;
+  --brand-deep: #003C99;
+  --ice: #EAF8FF;
+  --navy: #0B1F35;
+  --success: oklch(0.68 0.16 155);
+
+  /* Semantic — light */
+  --background: #FFFFFF;
+  --foreground: #0B1F35;
+  --card: #FFFFFF;
+  --card-foreground: #0B1F35;
+  --popover: #FFFFFF;
+  --popover-foreground: #0B1F35;
+  --primary: #0057D9;
+  --primary-foreground: #FFFFFF;
+  --primary-glow: #00B8F5;
+  --secondary: #00B8F5;
+  --secondary-foreground: #0B1F35;
+  --muted: #F4F8FC;
+  --muted-foreground: #4A5B70;
+  --accent: #EAF8FF;
+  --accent-foreground: #0B1F35;
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: #FFFFFF;
+  --border: #E3ECF5;
+  --input: #E3ECF5;
+  --ring: #0057D9;
+
+  /* Gradients & shadows */
+  --gradient-brand: linear-gradient(135deg, #0057D9 0%, #00B8F5 100%);
+  --gradient-hero:
+    linear-gradient(180deg, rgba(11,31,53,0) 55%, rgba(11,31,53,0.55) 100%),
+    linear-gradient(115deg, rgba(11,31,53,0.92) 0%, rgba(11,31,53,0.62) 38%, rgba(0,87,217,0.4) 68%, rgba(0,184,245,0.16) 100%);
+  --gradient-hero-light:
+    linear-gradient(180deg, rgba(255,255,255,0) 55%, rgba(255,255,255,0.7) 100%),
+    linear-gradient(115deg, rgba(234,248,255,0.88) 0%, rgba(255,255,255,0.55) 45%, rgba(0,87,217,0.14) 100%);
+  --gradient-glass: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.35));
+  --shadow-elegant: 0 20px 50px -20px rgba(0, 87, 217, 0.35);
+  --shadow-card: 0 8px 24px -12px rgba(11, 31, 53, 0.12);
+  --shadow-soft: 0 2px 10px rgba(11, 31, 53, 0.06);
+
+  --transition-smooth: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+  --background: #05101E;
+  --foreground: #EAF8FF;
+  --card: #0B1F35;
+  --card-foreground: #EAF8FF;
+  --popover: #0B1F35;
+  --popover-foreground: #EAF8FF;
+  --primary: #00B8F5;
+  --primary-foreground: #05101E;
+  --primary-glow: #4FD3FF;
+  --secondary: #0057D9;
+  --secondary-foreground: #FFFFFF;
+  --muted: #10263F;
+  --muted-foreground: #8FA6BF;
+  --accent: #10263F;
+  --accent-foreground: #EAF8FF;
+  --border: rgba(255,255,255,0.08);
+  --input: rgba(255,255,255,0.12);
+  --ring: #00B8F5;
+  --gradient-hero:
+    linear-gradient(180deg, rgba(5,16,30,0) 55%, rgba(5,16,30,0.6) 100%),
+    linear-gradient(115deg, rgba(5,16,30,0.94) 0%, rgba(5,16,30,0.66) 38%, rgba(0,87,217,0.42) 68%, rgba(0,184,245,0.18) 100%);
+}
+
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  max-width: 80rem;
+}
+
+@utility gradient-brand {
+  background-image: var(--gradient-brand);
+}
+
+@utility gradient-text {
+  background-image: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass-card {
+  background: var(--gradient-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+@utility shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}
+
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+@utility hover-lift {
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elegant);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@utility animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+@utility animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+@utility animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+}
+
+/* ------------------------------------------------------------------
+ * Blog article typography (.post-prose) — readable, scannable long-form.
+ * Uses the site's own colour tokens, so it matches each brand.
+ * ------------------------------------------------------------------ */
+.post-prose { font-size: 1.0625rem; line-height: 1.85; color: color-mix(in oklab, var(--foreground) 88%, transparent); overflow-wrap: anywhere; }
+.post-prose > * + * { margin-top: 1.15em; }
+.post-prose p { margin: 0; }
+.post-prose > * + p, .post-prose > * + ul, .post-prose > * + ol { margin-top: 1.1em; }
+.post-prose h2, .post-prose h3, .post-prose h4 { font-family: var(--font-display); color: var(--navy); scroll-margin-top: 7rem; }
+.post-prose h2 {
+  position: relative;
+  margin-top: 2.6em;
+  padding-top: 1.4em;
+  border-top: 1px solid var(--border);
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 1.95rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+.post-prose h2::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 3.5rem;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: var(--primary);
+}
+.post-prose > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.post-prose > h2:first-child::before { display: none; }
+.post-prose h3 { margin-top: 2em; font-size: 1.25rem; font-weight: 700; line-height: 1.35; letter-spacing: -0.01em; }
+.post-prose h2 + h3 { margin-top: 1.2em; }
+.post-prose h4 { margin-top: 1.6em; font-size: 1.05rem; font-weight: 700; }
+.post-prose h2 > a, .post-prose h3 > a { color: inherit; text-decoration: none; }
+.post-prose strong { color: var(--navy); font-weight: 650; }
+.post-prose a { color: var(--primary); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; text-decoration-color: color-mix(in oklab, var(--primary) 40%, transparent); transition: text-decoration-color 200ms; }
+.post-prose a:hover { text-decoration-color: var(--primary); }
+
+/* Lists */
+.post-prose ul, .post-prose ol { padding-left: 0; list-style: none; }
+.post-prose li { position: relative; padding-left: 1.9rem; }
+.post-prose li + li { margin-top: 0.55em; }
+.post-prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.62em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 14%, transparent);
+}
+.post-prose ol { counter-reset: post-ol; }
+.post-prose ol > li { counter-increment: post-ol; }
+.post-prose ol > li::before {
+  content: counter(post-ol);
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--primary) 12%, transparent);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.post-prose li > p { margin: 0; }
+
+/* Quotes become a highlighted note */
+.post-prose blockquote {
+  margin-inline: 0;
+  border-radius: 1rem;
+  border-left: 4px solid var(--primary);
+  background: color-mix(in oklab, var(--primary) 6%, white);
+  padding: 1.1rem 1.35rem;
+  color: var(--navy);
+  font-style: normal;
+}
+.post-prose blockquote > * + * { margin-top: 0.6em; }
+
+/* Media */
+.post-prose img { display: block; width: 100%; height: auto; border-radius: 1rem; box-shadow: var(--shadow-card); }
+.post-prose figure { margin-inline: 0; }
+.post-prose figcaption { margin-top: 0.6rem; font-size: 0.85rem; color: var(--muted-foreground); text-align: center; }
+.post-prose hr { margin: 2.5em 0; border: 0; border-top: 1px solid var(--border); }
+.post-prose iframe, .post-prose video { width: 100%; aspect-ratio: 16 / 9; border-radius: 1rem; }
+
+/* Tables scroll sideways on small screens */
+.post-prose .post-table { overflow-x: auto; border: 1px solid var(--border); border-radius: 1rem; -webkit-overflow-scrolling: touch; }
+.post-prose table { width: 100%; min-width: 32rem; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.55; }
+.post-prose thead th { background: color-mix(in oklab, var(--primary) 8%, white); }
+.post-prose th { color: var(--navy); font-weight: 700; text-align: left; }
+.post-prose th, .post-prose td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.post-prose tr:last-child > td { border-bottom: 0; }
+.post-prose tbody tr:nth-child(even) > td { background: color-mix(in oklab, var(--muted) 60%, transparent); }
+
+/* Mobile TOC summary marker */
+.post-toc-mobile > summary::-webkit-details-marker { display: none; }
+
+/* Related article cards */
+.post-related { transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 320ms ease, border-color 320ms ease; }
+@media (hover: hover) and (pointer: fine) {
+  .post-related:hover { transform: translateY(-4px); border-color: color-mix(in oklab, var(--primary) 30%, transparent); box-shadow: var(--shadow-elegant); }
+  .post-related:hover img { transform: scale(1.05); }
+}
+
+@media (max-width: 639.98px) {
+  .post-prose { font-size: 1rem; line-height: 1.8; }
+  .post-prose h2 { margin-top: 2.2em; padding-top: 1.2em; }
+}

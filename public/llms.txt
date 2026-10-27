@@ -1,0 +1,28 @@
+# Matla Al Anwar Chiller Van Transport
+
+> Premium refrigerated van and chiller truck transport across the UAE. Temperature-controlled cold-chain logistics for food, pharma, seafood, flowers and more. 24/7 cold-chain support based in Dubai, United Arab Emirates.
+
+Matla Al Anwar Chiller Van Transport (matlaalanwar.ae) provides refrigerated transport and chiller van rental services throughout the UAE, serving industries with strict cold-chain requirements.
+
+## Company
+
+- Website: https://matlaalanwar.ae
+- Phone: +971 50 000 0000
+- WhatsApp: https://wa.me/971500000000
+- Coverage: All 7 emirates of the UAE
+
+## Pages
+
+- [Home](https://matlaalanwar.ae/): Overview of chiller van rental and refrigerated transport services
+- [About](https://matlaalanwar.ae/about): Company background and values
+- [Fleet](https://matlaalanwar.ae/fleet): Available chiller vans and refrigerated trucks with pricing
+- [Services](https://matlaalanwar.ae/services): Refrigerated transport service offerings
+- [Industries](https://matlaalanwar.ae/industries): Industries served (food, pharma, seafood, flowers, etc.)
+- [Locations](https://matlaalanwar.ae/locations): Emirate-by-emirate service coverage
+- [Blog](https://matlaalanwar.ae/blog): Articles on cold-chain logistics
+- [FAQ](https://matlaalanwar.ae/faq): Frequently asked questions
+- [Contact](https://matlaalanwar.ae/contact): Contact details and quote requests
+
+## Optional
+
+- [Sitemap](https://matlaalanwar.ae/sitemap.xml): Full list of indexed URLs
